@@ -1,0 +1,1 @@
+﻿const n=3;var s,c:real;j,i:byte;begin s:=0;for i:=1to n do for j:=1to n do begin read(c);if n>abs(2*i-n-1)+abs(2*j-n-1)then s:=s+c end;write(s) end.
