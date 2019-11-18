@@ -1,7 +1,6 @@
 procedure Merge(l1,l2:Tlist;var L:Tlist);
 var
     D,pr:Tlist;
-    F:TNode;
 begin
     while(l1=nil) and(l2=nil) do exit;
     new(L);
@@ -30,5 +29,5 @@ begin
         d:=d^.next;
     end;
     dispose(d);
-    pr^.next:=nil;
+    pr:=nil;
 end;
